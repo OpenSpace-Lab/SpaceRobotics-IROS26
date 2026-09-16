@@ -45,13 +45,19 @@
         .paper-card:hover {
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
+        .organizer-card {
+            transition: transform 0.2s ease;
+        }
+        .organizer-card:hover {
+            transform: translateY(-5px);
+        }
         .organizer-img {
             width: 130px;
             height: 130px;
             object-fit: cover;
             border-radius: 50%;
             border: 3px solid #007bff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
         .pdf-viewer, .ppt-viewer {
             width: 100%;
@@ -228,47 +234,47 @@
             <h2 class="section-header"><i class="fa-solid fa-users me-2"></i>Organizers</h2>
             <div class="row text-center justify-content-center">
                 
-                <!-- Organizer 1 -->
-                <div class="col-6 col-md-2 mb-4">
-                    <a href="https://scholar.google.com" target="_blank" class="text-decoration-none text-dark">
-                        <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/Shenghai_Yuan.jpg" alt="Shenghai Yuan" class="organizer-img mb-2" onerror="this.src='https://via.placeholder.com/150?text=Shenghai+Yuan'">
-                        <h6 class="mb-0">Shenghai Yuan</h6>
+                <!-- Organizer 1: Shenghai Yuan -->
+                <div class="col-6 col-md-2 mb-4 organizer-card">
+                    <a href="https://scholar.google.com/citations?user=XcV_sesAAAAJ&hl=zh-CN" target="_blank" class="text-decoration-none text-dark">
+                        <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/Shenghai_Yuan.png" alt="Shenghai Yuan" class="organizer-img mb-2" onerror="this.src='https://via.placeholder.com/150?text=Shenghai+Yuan'">
+                        <h6 class="mb-0 font-weight-bold">Shenghai Yuan</h6>
                         <small class="text-muted">NTU</small>
                     </a>
                 </div>
 
-                <!-- Organizer 2 -->
-                <div class="col-6 col-md-2 mb-4">
-                    <a href="https://scholar.google.com" target="_blank" class="text-decoration-none text-dark">
-                        <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/Dong_Li.jpg" alt="Dong Li" class="organizer-img mb-2" onerror="this.src='https://via.placeholder.com/150?text=Dong+Li'">
-                        <h6 class="mb-0">Dong Li</h6>
+                <!-- Organizer 2: Dong Li -->
+                <div class="col-6 col-md-2 mb-4 organizer-card">
+                    <a href="https://doongli.github.io/" target="_blank" class="text-decoration-none text-dark">
+                        <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/DONGLI.png" alt="Dong Li" class="organizer-img mb-2" onerror="this.src='https://via.placeholder.com/150?text=Dong+Li'">
+                        <h6 class="mb-0 font-weight-bold">Dong Li</h6>
                         <small class="text-muted">MUST & CASIA</small>
                     </a>
                 </div>
 
-                <!-- Organizer 3 -->
-                <div class="col-6 col-md-2 mb-4">
-                    <a href="https://scholar.google.com" target="_blank" class="text-decoration-none text-dark">
-                        <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/Muqing_Cao.jpg" alt="Muqing Cao" class="organizer-img mb-2" onerror="this.src='https://via.placeholder.com/150?text=Muqing+Cao'">
-                        <h6 class="mb-0">Muqing Cao</h6>
+                <!-- Organizer 3: Muqing Cao -->
+                <div class="col-6 col-md-2 mb-4 organizer-card">
+                    <a href="https://caomuqing.github.io/" target="_blank" class="text-decoration-none text-dark">
+                        <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/Muqing_Cao.jpeg" alt="Muqing Cao" class="organizer-img mb-2" onerror="this.src='https://via.placeholder.com/150?text=Muqing+Cao'">
+                        <h6 class="mb-0 font-weight-bold">Muqing Cao</h6>
                         <small class="text-muted">CMU</small>
                     </a>
                 </div>
 
-                <!-- Organizer 4 -->
-                <div class="col-6 col-md-2 mb-4">
-                    <a href="https://scholar.google.com" target="_blank" class="text-decoration-none text-dark">
+                <!-- Organizer 4: Yuchen Li -->
+                <div class="col-6 col-md-2 mb-4 organizer-card">
+                    <a href="https://scholar.google.com/citations?user=obmi8lYAAAAJ&hl=zh-CN" target="_blank" class="text-decoration-none text-dark">
                         <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/Yuchen_Li.jpg" alt="Yuchen Li" class="organizer-img mb-2" onerror="this.src='https://via.placeholder.com/150?text=Yuchen+Li'">
-                        <h6 class="mb-0">Yuchen Li</h6>
+                        <h6 class="mb-0 font-weight-bold">Yuchen Li</h6>
                         <small class="text-muted">TUM</small>
                     </a>
                 </div>
 
-                <!-- Organizer 5 -->
-                <div class="col-6 col-md-2 mb-4">
-                    <a href="https://scholar.google.com" target="_blank" class="text-decoration-none text-dark">
-                        <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/Long_Chen.jpg" alt="Long Chen" class="organizer-img mb-2" onerror="this.src='https://via.placeholder.com/150?text=Long+Chen'">
-                        <h6 class="mb-0">Long Chen</h6>
+                <!-- Organizer 5: Long Chen -->
+                <div class="col-6 col-md-2 mb-4 organizer-card">
+                    <a href="https://scholar.google.com/citations?user=jzvXnkcAAAAJ&hl=zh-CN" target="_blank" class="text-decoration-none text-dark">
+                        <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/LongChen.jpg" alt="Long Chen" class="organizer-img mb-2" onerror="this.src='https://via.placeholder.com/150?text=Long+Chen'">
+                        <h6 class="mb-0 font-weight-bold">Long Chen</h6>
                         <small class="text-muted">CASIA</small>
                     </a>
                 </div>
