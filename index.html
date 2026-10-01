@@ -47,6 +47,18 @@
             font-weight: 700;
             color: #0d1b2a;
         }
+        .gallery-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
         .paper-card {
             border: 1px solid #e2e8f0;
             border-radius: 8px;
@@ -100,24 +112,49 @@
             <h1 class="hero-title my-3">First Special Session on Robotics in Space Exploration</h1>
             <p class="lead mb-4">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026)</p>
             <div class="d-flex justify-content-center gap-4 text-light flex-wrap">
-                <div><i class="fa-regular fa-calendar me-2"></i>September 27 - October 1, 2026</div>
+                <div><i class="fa-regular fa-calendar me-2"></i>9.29 Tuesday afternoon in Room 406.</div>
                 <div><i class="fa-solid fa-location-dot me-2"></i>Pittsburgh, PA, USA</div>
-            </div>
-            <div class="mt-4">
-                <a href="https://ras.papercept.net/conferences/scripts/start.pl" target="_blank" class="badge badge-code rounded-pill">
-                    Submission Code: <strong>r4up3</strong> <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.85em;"></i>
-                </a>
             </div>
         </div>
     </header>
 
     <main class="container my-5">
 
-        <!-- 1. Call for Papers Section -->
+        <!-- 1. Photos / Highlights Section -->
+        <section id="highlights" class="mb-5">
+            <h2 class="section-header"><i class="fa-solid fa-camera-retro me-2"></i>Session Highlights</h2>
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/1.jpg" alt="Session Photo 1" class="gallery-img">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/2.jpg" alt="Session Photo 2" class="gallery-img">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/7.jpg" alt="Session Photo 7" class="gallery-img">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/13.jpg" alt="Session Photo 13" class="gallery-img">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <img src="https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/IMG/14.jpg" alt="Session Photo 14" class="gallery-img">
+                </div>
+            </div>
+            <p class="text-center text-muted mt-3 mb-0">
+                <small>Special thanks to <strong>Zhenyu Hou</strong> for chairing this session!</small>
+            </p>
+        </section>
+
+        <!-- 2. Call for Papers Section -->
         <section id="cfp" class="mb-5">
             <h2 class="section-header"><i class="fa-solid fa-bullhorn me-2"></i>Call for Papers</h2>
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4">
+                    <div class="mb-3">
+                        <a href="https://ras.papercept.net/conferences/scripts/start.pl" target="_blank" class="badge badge-code rounded-pill">
+                            Submission Code: <strong>r4up3</strong> <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.85em;"></i>
+                        </a>
+                    </div>
                     <p>We invite researchers and practitioners to submit original work on cutting-edge robotics technologies for space exploration. Topics of interest include, but are not limited to:</p>
                     <ul>
                         <li>Mechanical Design of Robots</li>
@@ -140,7 +177,7 @@
                     </div>
                 </div>
 
-                <!-- Call for Papers Poster Preview (Embedded Viewer without auto-download) -->
+                <!-- Call for Papers Poster Preview -->
                 <div class="col-lg-6 mb-4">
                     <div class="cfp-poster-container">
                         <iframe class="cfp-poster-viewer" src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/OpenSpace-Lab/SpaceRobotics-IROS26/main/iros_2026_special_session_poster.pdf"></iframe>
@@ -149,7 +186,7 @@
             </div>
         </section>
 
-        <!-- 2. Accepted Papers Section -->
+        <!-- 3. Accepted Papers Section -->
         <section id="accepted-papers" class="mb-5">
             <h2 class="section-header"><i class="fa-solid fa-file-lines me-2"></i>Accepted Papers</h2>
             
@@ -249,7 +286,7 @@
 
         </section>
 
-        <!-- 3. Poster Template Section -->
+        <!-- 4. Poster Template Section -->
         <section id="poster-template" class="mb-5">
             <h2 class="section-header"><i class="fa-solid fa-file-powerpoint me-2"></i>Poster Template</h2>
             <p>We provide an optional poster template for presenters. Feel free to download and use it for your poster presentation.</p>
@@ -265,7 +302,7 @@
             </div>
         </section>
 
-        <!-- 4. Organizers Section -->
+        <!-- 5. Organizers Section -->
         <section id="organizers" class="mb-5">
             <h2 class="section-header"><i class="fa-solid fa-users me-2"></i>Organizers</h2>
             <div class="row text-center justify-content-center">
